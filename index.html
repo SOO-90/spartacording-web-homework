@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <title>스파르타코딩클럽 | 총알오징어</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Gowun Batang', serif;
+        }
+
+        .squid{
+            width:540px;
+            margin: auto;
+        }
+        .squid_img {
+            background-image: url("https://soo-90.github.io/homepage-squid/image/food.png");
+            background-size: cover;
+            background-position: center;
+            height: 360px;
+            margin: 50px auto 10px auto;
+            border-radius: 7px;
+        }
+
+        .content {
+            margin: 0px auto 0px auto;
+            text-align: left;
+        }
+
+        .squid_price {
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        .input-group-text {
+            height: 35px;
+            width: 90px;
+            text-align: center;
+        }
+        .custom-select{
+            height: 35px;
+        }
+        .btn-primary{
+            padding: 5px 10px 5px 10px;
+            width: auto;
+            margin: auto;
+            display: block;
+
+        }
+    </style>
+    <script>
+        function order(){
+            alert('주문이 완료되었습니다! 감사합니다 :)')
+        }
+    </script>
+</head>
+
+<body>
+    <div class="squid">
+        <div class="squid_img"></div>
+        <div class="content">
+            <h1>총알 오징어 <span class="squid_price">가격:3,000원/마리</span></h1>
+            <p>이것이 오징어야, 문어야? 보는 사람마다 헷깔리게 만드는 토실토실 총알 오징어 둘이 먹다 하나 죽어도 모르는 총알 오징어, 지금 주문하세요!</p>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">주문자 이름</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">수량</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>-- 수량을 선택하세요 --</option>
+                <option value="1">1마리</option>
+                <option value="2">2마리</option>
+                <option value="3">3마리</option>
+            </select>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">주소</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">이름</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <button type="button" onclick="order()" class="btn btn-primary">주문하기</button>
+    </div>
+</body>
+
+</html>
